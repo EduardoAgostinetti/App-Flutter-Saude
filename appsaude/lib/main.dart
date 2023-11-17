@@ -55,7 +55,7 @@ class LoginPageState extends State<LoginPage> {
 
   void _sendData() async {
     final String apiUrl =
-        'http://192.168.13.160:3000/user/login'; // Substitua pela sua URL de destino
+        'http://10.21.3.203:3000/user/login'; // Substitua pela sua URL de destino
 
     var data = {
       'email': emailController.text,
@@ -178,7 +178,7 @@ class RegisterPageState extends State<RegisterPage> {
 
   void _sendData() async {
     final String apiUrl =
-        'http://192.168.13.160:3000/user/register'; // Substitua pela sua URL de destino
+        'http://10.21.3.203:3000/user/register'; // Substitua pela sua URL de destino
 
     var data = {
       'cpf': cpfController.text,
@@ -485,7 +485,7 @@ class _MedicoListViewState extends State<MedicoListView> {
   }
 
   void _sendData() async {
-    final String apiUrl = 'http://192.168.13.160:3000/user/medico';
+    final String apiUrl = 'http://10.21.3.203:3000/user/medico';
 
     var response = await http.post(
       Uri.parse(apiUrl),
@@ -626,7 +626,7 @@ class ProntuarioState extends State<Prontuario> {
 
   void _sendData() async {
     final String apiUrl =
-        'http://192.168.13.160:3000/user/createReceita'; // Substitua pela sua URL de destino
+        'http://10.21.3.203:3000/user/createReceita'; // Substitua pela sua URL de destino
 
     var data = {
       'remedio': remedioController.text,
@@ -786,7 +786,7 @@ class CadastroProntuarioState extends State<CadastroProntuario> {
 
   void _sendData() async {
     final String apiUrl =
-        'http://192.168.13.160:3000/user/createProntuario'; // Substitua pela sua URL de destino
+        'http://10.21.3.203:3000/user/createProntuario'; // Substitua pela sua URL de destino
 
     var data = {
       'nome': nomeController.text,
@@ -932,7 +932,7 @@ class PacienteState extends State<Paciente> {
 
   void _sendData() async {
     final String apiUrl =
-        'http://192.168.13.160:3000/user/paciente'; // Substitua pela sua URL de destino
+        'http://10.21.3.203:3000/user/paciente'; // Substitua pela sua URL de destino
 
     var data = {
       'cpf': cpf,
@@ -1098,7 +1098,7 @@ class _FarmaciaListViewState extends State<FarmaciaListView> {
 
   void _sendData1(var receita, var quantidade, var boolRemedio, var cpf) async {
     final String apiUrl =
-        'http://192.168.13.160:3000/user/controle'; // Substitua pela sua URL de destino
+        'http://10.21.3.203:3000/user/controle'; // Substitua pela sua URL de destino
 
     var data = {
       'receita': receita,
@@ -1130,7 +1130,7 @@ class _FarmaciaListViewState extends State<FarmaciaListView> {
   void _sendData() async {
     FarmaciaListView();
     final String apiUrl =
-        'http://192.168.13.160:3000/user/farmacia'; // Substitua pela sua URL de destino
+        'http://10.21.3.203:3000/user/farmacia'; // Substitua pela sua URL de destino
 
     var data = {};
 
@@ -1173,7 +1173,7 @@ class _FarmaciaListViewState extends State<FarmaciaListView> {
   }
 
   void _sendData2() async {
-    final String apiUrl = 'http://192.168.13.160:3000/user/estoque';
+    final String apiUrl = 'http://10.21.3.203:3000/user/estoque';
 
     var response = await http.post(
       Uri.parse(apiUrl),
